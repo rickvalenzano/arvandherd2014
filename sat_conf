@@ -1,0 +1,6 @@
+-mrw_shared "-ucb_const 1.0 -res_type SMART -pool_act 50 -pool_size 50 -mrw_time_limit 900 -adjust_online -run_aras -aras_time 60 -aras_mem 500000"
+-mrw_conf "-walk_type MDA -e_rate 2"
+-mrw_conf "-walk_type MHA -len_walk 10"
+-mrw_conf "-walk_type MDA -len_walk 3"
+-mrw_conf "-walk_type MHA"
+-wa_conf "-heur LM -heur FF_SWITCH -pref FF_SWITCH -init_exp_limit 100 -exp_limit_factor 10 -weight_list [-1,5,1] -rand_open -mem_limit 3500000 -loop_weights -epsilon 0.2 -run_aras -aras_time 30 -aras_mem 200000 -bound_type DAS"
