@@ -30,6 +30,7 @@
 #include <vector>
 #include <fstream>
 #include <sstream>
+#include <unistd.h>
 
 using namespace std;
 
