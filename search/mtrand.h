@@ -50,7 +50,7 @@ public:
 // default constructor: uses default seed only if this is the first instance
   MTRand_int32() { seed(5489UL); }
 // constructor with 32 bit int as seed
-  MTRand_int32(unsigned long s) { seed(s % 4294967295); }
+  MTRand_int32(unsigned long s) { seed(s % 4294967295U); }
 // constructor with array of size 32 bit ints as seed
   MTRand_int32(const unsigned long* array, int size) { seed(array, size); }
 // the two seed functions
